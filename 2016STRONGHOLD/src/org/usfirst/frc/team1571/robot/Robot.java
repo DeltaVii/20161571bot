@@ -4,10 +4,12 @@ package org.usfirst.frc.team1571.robot;
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
+import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import org.usfirst.frc.team1571.robot.subsystems.Drive;
 import org.usfirst.frc.team1571.robot.subsystems.ArmMotor;
 import edu.wpi.first.wpilibj.Joystick;
+import edu.wpi.first.wpilibj.Jaguar;
 
 /**
  * The VM is configured to automatically run this class, and to call the
@@ -19,7 +21,10 @@ import edu.wpi.first.wpilibj.Joystick;
 public class Robot extends IterativeRobot {
 
 	public static final Drive Drive = new Drive();
-	public static final ArmMotor ArmMotor = new ArmMotor();
+	public static final Jaguar nuWindowMotor = new Jaguar(0);
+	//public static final Subsystem ArmMotor = new Susbsystem();
+	//public static final ArmMotor ArmMotor = new ArmMotor();
+	//public static final ArmMotor ArmMotor = new ArmMotor();
 	public static OI oi;
 	Joystick mainStick;
 
